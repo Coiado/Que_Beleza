@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6d9c8b"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="br.com.ifood.cursoandroid.ifood.activity.EscolherUserActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="80dp"
+        app:srcCompat="@drawable/logo_qb" />
+
+    <TextView
+        android:text="Você é?"
+        android:textColor="#D7FFFF"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <Button
+        android:id="@+id/buttonAcesso"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Conectar"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:theme="@style/botaoPadrao" />
+
+    <Button
+        android:id="@+id/buttonRegistro"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Registrar"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:theme="@style/botaoPadrao" />
+
+</LinearLayout>

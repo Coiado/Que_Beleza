@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#6d9c8b"
+    tools:context="br.com.ifood.cursoandroid.ifood.activity.ConfiguracoesEmpresaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagePerfilEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/perfil" />
+
+        <TextView
+            android:text="Serviços:"
+            android:textStyle="bold"
+            android:textColor="#D7FFFF"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCabelo"
+                android:layout_height="wrap_content"
+                android:onClick="validarDadosEmpresa"
+                android:padding="16dp"
+                android:layout_margin="10dp"
+                android:text="Cabelo"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:theme="@style/botaoEmpresa" />
+            <Button
+                android:id="@+id/buttonUnha"
+                android:layout_height="wrap_content"
+                android:onClick="validarDadosEmpresa"
+                android:padding="16dp"
+                android:layout_margin="10dp"
+                android:text="Unha"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:theme="@style/botaoEmpresa" />
+            <Button
+                android:id="@+id/buttonAcesso"
+                android:layout_height="wrap_content"
+                android:onClick="validarDadosEmpresa"
+                android:padding="16dp"
+                android:layout_margin="10dp"
+                android:text="Depilação"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:theme="@style/botaoEmpresa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editCabelo"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:layout_margin="10dp"
+                android:hint="-"
+                android:inputType="text"
+                android:padding="16dp" />
+
+            <TextView
+                android:text="min"
+                android:textStyle="bold"
+                android:textColor="#D7FFFF"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <EditText
+                android:id="@+id/editUnha"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:hint="-"
+                android:inputType="text"
+                android:padding="16dp" />
+
+            <TextView
+                android:text="min"
+                android:textStyle="bold"
+                android:textColor="#D7FFFF"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <EditText
+                android:id="@+id/editDepilacao"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:hint="-"
+                android:inputType="text"
+                android:padding="16dp" />
+
+            <TextView
+                android:text="min"
+                android:textStyle="bold"
+                android:textColor="#D7FFFF"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atendimento:"
+            android:textColor="#D7FFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonDomicilio"
+                android:layout_height="wrap_content"
+                android:onClick="validarDadosEmpresa"
+                android:padding="16dp"
+                android:layout_margin="10dp"
+                android:text="À domicilio"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:theme="@style/botaoEmpresa" />
+            <Button
+                android:id="@+id/buttonLocal"
+                android:layout_height="wrap_content"
+                android:onClick="validarDadosEmpresa"
+                android:padding="16dp"
+
+                android:layout_margin="10dp"
+                android:text="Local próprio"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:theme="@style/botaoEmpresa" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonAcesso2"
+            android:layout_height="wrap_content"
+            android:onClick="validarDadosEmpresa"
+            android:padding="16dp"
+            android:text="Salvar"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:theme="@style/botaoPadrao" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
