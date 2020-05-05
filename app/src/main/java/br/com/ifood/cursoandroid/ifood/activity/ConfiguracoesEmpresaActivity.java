@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -34,6 +35,8 @@ public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
 
     private EditText editCabelo, editDepilacao,
                     editEmpresaTempo, editUnha;
+    private Button btnCabelo, btnDepilacao,
+            btnEmpresaTempo, btnUnha;
     private ImageView imagePerfilEmpresa;
 
     private static final int SELECAO_GALERIA = 200;
@@ -54,10 +57,10 @@ public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
         idUsuarioLogado = UsuarioFirebase.getIdUsuario();
 
         //Configurações Toolbar
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Configurações");
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        Toolbar toolbar = findViewById(R.id.toolbar);
+//        toolbar.setTitle("Configurações");
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         imagePerfilEmpresa.setOnClickListener(new View.OnClickListener() {
             @Override

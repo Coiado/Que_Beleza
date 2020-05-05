@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ifood</string>
+    <string name="app_name">Que Beleza</string>
     <string name="title_activity_escolher_user">EscolherUserActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

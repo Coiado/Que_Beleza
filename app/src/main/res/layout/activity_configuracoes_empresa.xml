@@ -38,40 +38,45 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
+            <ToggleButton
                 android:id="@+id/buttonCabelo"
                 android:layout_height="wrap_content"
-                android:onClick="validarDadosEmpresa"
-                android:padding="16dp"
-                android:layout_margin="10dp"
-                android:text="Cabelo"
-                android:layout_marginLeft="10dp"
+                android:textOn="Cabelo"
+                android:textOff="Cabelo"
                 android:layout_width="wrap_content"
                 android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="0dp"
                 android:textAllCaps="false"
-                android:theme="@style/botaoEmpresa" />
-            <Button
+                android:theme="@style/botaoEmpresa"
+                />
+
+            <ToggleButton
                 android:id="@+id/buttonUnha"
                 android:layout_height="wrap_content"
-                android:onClick="validarDadosEmpresa"
-                android:padding="16dp"
-                android:layout_margin="10dp"
-                android:text="Unha"
+                android:textOn="Unha"
+                android:textOff="Unha"
                 android:layout_width="wrap_content"
                 android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
                 android:textAllCaps="false"
-                android:theme="@style/botaoEmpresa" />
-            <Button
-                android:id="@+id/buttonAcesso"
+                android:theme="@style/botaoEmpresa"
+                />
+
+            <ToggleButton
+                android:id="@+id/buttonDepilacao"
                 android:layout_height="wrap_content"
-                android:onClick="validarDadosEmpresa"
-                android:padding="16dp"
-                android:layout_margin="10dp"
-                android:text="Depilação"
+                android:textOn="Depilação"
+                android:textOff="Depilação"
                 android:layout_width="wrap_content"
                 android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
                 android:textAllCaps="false"
-                android:theme="@style/botaoEmpresa" />
+                android:theme="@style/botaoEmpresa"
+                />
+
         </LinearLayout>
 
         <LinearLayout
@@ -87,7 +92,7 @@
                 android:ems="10"
                 android:layout_margin="10dp"
                 android:hint="-"
-                android:inputType="text"
+                android:inputType="number"
                 android:padding="16dp" />
 
             <TextView
@@ -111,7 +116,7 @@
                 android:background="@drawable/bg_edit_text"
                 android:ems="10"
                 android:hint="-"
-                android:inputType="text"
+                android:inputType="number"
                 android:padding="16dp" />
 
             <TextView
@@ -135,7 +140,7 @@
                 android:background="@drawable/bg_edit_text"
                 android:ems="10"
                 android:hint="-"
-                android:inputType="text"
+                android:inputType="number"
                 android:padding="16dp" />
 
             <TextView
@@ -169,7 +174,6 @@
             <Button
                 android:id="@+id/buttonDomicilio"
                 android:layout_height="wrap_content"
-                android:onClick="validarDadosEmpresa"
                 android:padding="16dp"
                 android:layout_margin="10dp"
                 android:text="À domicilio"
@@ -181,7 +185,6 @@
             <Button
                 android:id="@+id/buttonLocal"
                 android:layout_height="wrap_content"
-                android:onClick="validarDadosEmpresa"
                 android:padding="16dp"
 
                 android:layout_margin="10dp"
@@ -193,7 +196,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/buttonAcesso2"
+            android:id="@+id/buttonAcesso"
             android:layout_height="wrap_content"
             android:onClick="validarDadosEmpresa"
             android:padding="16dp"

@@ -21,6 +21,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 import br.com.ifood.cursoandroid.ifood.R;
 import br.com.ifood.cursoandroid.ifood.helper.ConfiguracaoFirebase;
 import br.com.ifood.cursoandroid.ifood.helper.UsuarioFirebase;
@@ -32,6 +35,8 @@ public class ConfiguracoesUsuarioActivity extends AppCompatActivity {
     private Button buttonConfirmar;
     private String idUsuario;
     private DatabaseReference firebaseRef;
+    private ArrayList<String> preferencesWork = new ArrayList<String>();
+    private ArrayList<String> preferencesType = new ArrayList<String>();
     private FirebaseAuth autenticacao;
 
     @Override
@@ -123,9 +128,8 @@ public class ConfiguracoesUsuarioActivity extends AppCompatActivity {
 
     private void recuperarDadosUsuario(){
 
-        DatabaseReference usuarioRef = firebaseRef
-                .child("usuarios")
-                .child( idUsuario );
+        DatabaseReference usuarioRef = firebaseRef.child("usuarios")
+                                                  .child( idUsuario );
 
         usuarioRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -189,7 +193,7 @@ public class ConfiguracoesUsuarioActivity extends AppCompatActivity {
 
     private void abrirTelaPrincipal(String tipoUsuario){
         if(tipoUsuario.equals("E")){//empresa
-            startActivity(new Intent(getApplicationContext(), EmpresaActivity.class));
+            startActivity(new Intent(getApplicationContext(), ConfiguracoesEmpresaActivity.class));
         }else{//usuario
             startActivity(new Intent(getApplicationContext(), HomeActivity.class));
         }
